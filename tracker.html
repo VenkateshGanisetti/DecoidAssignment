@@ -1,0 +1,327 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #heading {
+            width: 219px;
+            height: 24px;
+            margin-top: 68px;
+            margin-left: 78px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24.38px;
+            text-align: left;
+            color: var(--black, #2C2B2B);
+        }
+
+        .arrow {
+            width: 20px;
+            height: 20px;
+            background-color: #F1F1F1;
+            margin-top: 70px;
+            position: absolute;
+
+        }
+
+        #sym {
+            position: absolute;
+            top: 68px;
+            left: 5px;
+        }
+
+        .chart {
+            position: absolute;
+            width: 100%;
+            margin-top: 90px;
+
+        }
+
+        .note {
+            position: relative;
+            width: 328.75px;
+            height: 50px;
+            margin-top: 230px;
+            background: linear-gradient(90.07deg, rgba(129, 157, 255, 0.28) 5.94%, rgba(16, 16, 16, 0) 76.45%);
+            border-radius: 10px;
+            border: 1.02px solid white;
+
+        }
+
+        .workhead {
+            width: 164px;
+            height: 20px;
+            margin-top: 54.7px;
+            margin-left: 16px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 19.5px;
+            text-align: left;
+            color: var(--black, #2C2B2B);
+
+
+
+        }
+
+        .see {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 14.63px;
+            text-align: left;
+            color: gray;
+
+        }
+
+        .events {
+            width: 343px;
+            height: 75px;
+            box-shadow: -4px 8px 25px -8px #00000026;
+            background-color: #FFFFFF;
+            border-radius: 12px;
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 16px;
+
+
+        }
+
+        .time {
+            font-family: Montserrat;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 12.19px;
+            text-align: left;
+
+
+
+        }
+
+        .tog {
+            width: 40px;
+            height: 20px;
+            position: absolute;
+            top: 425px;
+            font-size: 30px;
+            left: 303px;
+            gap: 0px;
+            opacity: 0px;
+
+        }
+
+        .tog2 {
+            width: 40px;
+            height: 20px;
+            position: absolute;
+            top: 525px;
+            font-size: 30px;
+            left: 303px;
+            gap: 0px;
+            opacity: 0px;
+
+        }
+
+        .head2 {
+            width: 225px;
+            height: 20px;
+            margin-top: 30px;
+            position: absolute;
+            margin-left: 30px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 19.5px;
+            text-align: left;
+
+
+        }
+
+        .bottom {
+            width: 343px;
+            height: 124px;
+            top: 647px;
+            left: 16px;
+            gap: 0px;
+            border-radius: 12px;
+            opacity: 0px;
+            background: rgba(140, 177, 255, 0.6);
+            box-shadow: -4px 8px 25px -8px rgba(0, 0, 0, 0.15);
+            position: absolute;
+
+
+        }
+
+        .name2 {
+            position: absolute;
+            margin-top: 90px;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14.63px;
+            text-align: left;
+            margin-left: 32px;
+            height: 15px;
+
+        }
+
+        .arms {
+            position: absolute;
+            margin-top: 120px;
+            font-family: Montserrat;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 12.19px;
+            text-align: left;
+            margin-left: 32px;
+
+        }
+        .chest{
+            position: absolute;
+            margin-top: 140px;
+            font-family: Montserrat;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 12.19px;
+            text-align: left;
+            margin-left: 32px;
+        }
+        .symbo1{
+            position: absolute;
+            font-size: 35px;
+            margin-left: 36px;
+            margin-top: 20px;
+            color: gray;
+        }
+        .symbo2{
+            position: absolute;
+            font-size: 30px;
+            margin-left: 105px;
+            margin-top: 25px;
+            color: gray;
+        }
+        .divi{
+            width: 63px;
+            height: 63px;
+            background: linear-gradient(90.95deg, #DEE5FF 0.79%, #809AFF 99.18%);
+            border-radius: 50%;
+            position: absolute;
+            margin-left: 150px;
+            top: 740px;
+
+        }
+        .symbo3{
+            position: absolute;
+            font-size: 35px;
+            margin-left: 166px;
+            margin-top: -5px;
+            color: white;
+        }
+        .symbo4{
+            position: absolute;
+            font-size: 30px;
+            margin-left: 235px;
+            margin-top: 20px;
+            color: gray;
+        }
+        .symbo5{
+            position: absolute;
+            font-size: 30px;
+            margin-left: 295px;
+            margin-top: 20px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="row" style="padding: 20px;position: fixed;width: 460px;">
+            <div class="time col-6">9:45</div>
+            <div class="status-symbol col-6" style="text-align: right;"><i class="bi bi-reception-4"></i>&nbsp;<i
+                    class="bi bi-wifi"></i>&nbsp;<i class="bi bi-battery-full"></i></div>
+        </div>
+    </div>
+    <div class="container" style="position:relative;">
+        <div class="row">
+            <div class="col-xs-12" id="heading">Workout Tracker</div>
+            <div class="arrow"></div>
+            <i class="fa-duotone fa-less-than" id="sym"></i>
+        </div>
+        <div class="row" style="display: flex;margin-top: 60px;position: absolute;">
+            <div class="n1" style="display: inline-block;margin-left: 125px;">Good job</div>
+            <div class="n2" style="display: inline-block;margin-left: 20px;">Less then 320cal</div>
+        </div>
+        <a href="schedule.html">
+            <div class="chart"><img src="Chart Full.png" alt="chart" height="89.98px" width="343px" /></div>
+        </a>
+        <div class="note"><i class="bi bi-exclamation-triangle" style="color: blue;margin-left: 10px;"></i>You've burned
+            fewer calaries than &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yesterday.Time to get moving! </div>
+        <div class="row" style="display: flex;position: absolute;">
+            <div class="workhead" style="display: inline-block;">Upcoming Workout</div>
+            <div class="see" style="display: inline-block;margin-top: 57px;margin-left: 80px;">See more</div>
+        </div>
+        <div class="row" style="display: flex;">
+            <div class="events" style="display: inline-block;position: relative;"></div>
+            <img src="exer.png" alt="exercise" width="50px" height="50px"
+                style="margin-top: 35px;display: inline-block;position: absolute;margin-left: 32px;">
+            <div class="name" style="display: inline-block;position: absolute;margin-top: 45px;margin-left:92px;">Full
+                Body Workout</div>
+            <div class="time" style="display: inline-block;position: absolute;margin-top: 70px;margin-left: 95px;">Today
+                3pm</div>
+            <div class="tog">
+                <i class="bi bi-toggle-off" style="color: blueviolet;"></i>
+            </div>
+        </div>
+        <div class="row" style="display: flex;">
+            <div class="events" style="display: inline-block;position: relative;"></div>
+            <img src="exer.png" alt="exercise" width="50px" height="50px"
+                style="margin-top: 35px;display: inline-block;position: absolute;margin-left: 32px;">
+            <div class="name" style="display: inline-block;position: absolute;margin-top: 45px;margin-left:92px;">Full
+                Body Workout</div>
+            <div class="time" style="display: inline-block;position: absolute;margin-top: 70px;margin-left: 95px;">Today
+                3pm</div>
+            <div class="tog2">
+                <i class="bi bi-toggle-off" style="color: blueviolet;"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="head2">What Do You Want to Train</div>
+            <div class="bottom"></div>
+            <div class="name2">Full Body Workout</div>
+            <div class="arms">Arms</div>
+            <div class="chest">Chest</div>
+            <div class="back" style="width: 100px;height: 100px;border-radius: 50%;margin-top: 80px;position: relative;margin-left: 250px;"></div>
+            <img src="bot.png" alt="bot" width="100px" height="100px" style="margin-left: 250px;margin-top: 70px;position: absolute;"/>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="below"  style="background-color:rgba(255, 255, 255, 1);width: 400px;height: 100px;"></div>
+            <i class="bi bi-house symbo1"></i>
+            <i class="bi bi-chat-left-dots symbo2"></i>
+            <div class="divi"></div>
+            <i class="bi bi-search symbo3"></i>
+            <i class="bi bi-camera symbo4"></i>
+            <i class="bi bi-person symbo5"></i>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

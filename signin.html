@@ -1,0 +1,227 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #heading {
+            width: 100%;
+            height: 23px;
+            margin-top: 28px;
+            margin-left: 16px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 23.44px;
+        }
+
+        #name {
+            width: 343px;
+            height: 50px;
+            margin-top: 67px;
+            margin-left: 16px;
+            border-radius: 12px;
+            background-color: #f1f1f1;
+        }
+
+        #lname {
+            width: 343px;
+            height: 50px;
+            margin-top: 21px;
+            margin-left: 16px;
+            border-radius: 12px;
+            background-color: #f1f1f1;
+        }
+
+        #email {
+            width: 343px;
+            height: 50px;
+            margin-top: 21px;
+            margin-left: 16px;
+            border-radius: 12px;
+            background-color: #f1f1f1;
+        }
+
+        #pass {
+            width: 343px;
+            height: 50px;
+            margin-top: 21px;
+            margin-left: 16px;
+            border-radius: 12px;
+            background-color: #f1f1f1;
+        }
+
+        #check {
+            width: 22px;
+            height: 22px;
+            margin-left: 16px;
+            margin-top: 24px;
+        }
+
+        #terms {
+            width: 313px;
+            height: 21px;
+            margin-top: 24px;
+            margin-left: 46px;
+            motion-rotation: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 21.35px;
+            color: gray;
+
+        }
+
+        span {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 21.35px;
+            color: #95BEFF;
+        }
+
+        #subm {
+            width: 343px;
+            opacity: 0px;
+            gap: 0px;
+            height: 50px;
+            margin-top: 122px;
+            margin-left: 16px;
+            border-radius: 12px;
+            background: linear-gradient(270deg, #7B91FF 0%, #95BEFF 100%);
+
+
+        }
+
+        #but {
+            width: 153px;
+            height: 20px;
+            margin: 9px;
+            margin-left: 88px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 19.5px;
+            text-align: center;
+            justify-content: center;
+            color: #FFFFFF;
+
+        }
+
+        .orr {
+            margin-top: 31px;
+            margin-left: 20px;
+            gap: 0px;
+            opacity: 0px;
+            display: inline-block;
+
+        }
+
+        .google {
+            width: 44px;
+            height: 44px;
+            margin-top: 35px;
+            margin-left: 134px;
+            gap: 0px;
+            border-radius: 8px;
+            border: 1px 0px 0px 0px;
+            opacity: 0px;
+            border: 1px solid #7F7F7F;
+            display: inline-block;
+
+        }
+
+        .facebook {
+            width: 44px;
+            height: 44px;
+            margin-top: 35px;
+            margin-left: 30px;
+            gap: 0px;
+            border-radius: 8px;
+            border: 1px solid #7f7f7f;
+            opacity: 0px;
+            display: inline-block;
+
+        }
+
+        .bottom {
+            width: 195px;
+            height: 15px;
+            margin-top: 26px;
+            margin-left: 90px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14.63px;
+            text-align: left;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="row" style="padding: 20px;position: fixed;width: 420px;">
+            <div class="time col-6">9:45</div>
+            <div class="status-symbol col-6" style="text-align: right;"><i class="bi bi-reception-4"></i>&nbsp;<i
+                    class="bi bi-wifi"></i>&nbsp;<i class="bi bi-battery-full"></i></div>
+        </div>
+    </div>
+    <div class="container" style="position: absolute;">
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-xs-12" id="heading">Create an account</div>
+        </div>
+        <input class="form-control col-sm-12" id="name" type="text" placeholder="First Name">
+        <input class="form-control col-sm-12" id="lname" type="text" placeholder="Last Name">
+        <input class="form-control col-sm-12" id="email" type="text" placeholder="Email">
+        <input class="form-control col-sm-12" id="pass" type="text" placeholder="Password">
+        <input class="form-check-input col-sm-12" type="checkbox" value="" id="Check">
+        <p id="terms">By proceeding, I agree to all <span><u>T&C</u></span> and <span><u>Privacy Policy</u></span></p>
+        <a href="goals.html">
+            <div id="subm">
+                <button type="button" class="btn btn-transparent" onclick="goals.html" id="but">Create an
+                    Account</button>
+            </div>
+        </a>
+        <div class="row" style="display: flex;">
+            <div>
+                <hr
+                    style="margin-top: 40px;height: 2px; min-width: 135px;margin-left: 25px; border: 0.5px; background-color:#7f7f7f;display: inline-block;">
+            </div>
+            <div>
+                <p class="orr">Or</p>
+            </div>
+            <div>
+                <hr
+                    style="margin-top: 40px;height: 2px; min-width: 135px;margin-left: 16px; border: 0.5px; background-color:#7f7f7f;display: inline-block;">
+
+            </div>
+        </div>
+        <div class="row" style="display: flex;">
+            <div class="google"><img src="google.png" alt="google" height="18px" width="18px" style="margin: 12px;" />
+            </div>
+            <div class="facebook"><img src="facebook.png" alt="facebook" height="18px" width="18px"
+                    style="margin: 12px;" />
+            </div>
+        </div>
+        <p class="bottom">Already have an account?<a href="login.html"><u>Login</u></a></p>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
